@@ -19,13 +19,16 @@ export const CMCC = {
 } as { [k: number]: number }
 
 export const CUCC = {
+  10: 2,
   20: 3,
   30: 4,
+  50: 6,
   100: 10,
   200: 15,
   300: 20,
   500: 30,
-  1024: 50
+  1024: 50,
+  2048: 70
 } as { [k: number]: number }
 
 export const CTCC = {
@@ -36,6 +39,9 @@ export const CTCC = {
   100: 10,
   150: 10,
   200: 15,
+  300: 20,
   500: 30,
-  1024: 50
+  1024: 50,
+  2048: 70,
+  3072: 100
 } as { [k: number]: number }

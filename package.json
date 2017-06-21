@@ -1,0 +1,49 @@
+{
+  "name": "traffic-price",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run tslint",
+    "build": "npm run build-ts",
+    "build-ts": "tsc -p . && npm run copy-dts",
+    "copy-dts": "cpx \"./index.d.ts\" \"./dist\"",
+    "test": "jest",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyu0925/traffic-price.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suyu0925/traffic-price/issues"
+  },
+  "homepage": "https://github.com/suyu0925/traffic-price#readme",
+  "devDependencies": {
+    "@types/jest": "^20.0.1",
+    "@types/node": "^8.0.1",
+    "cpx": "^1.5.0",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "mobile-operator": "^0.1.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}

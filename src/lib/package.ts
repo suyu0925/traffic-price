@@ -28,7 +28,7 @@ export const CUCC = {
   300: 20,
   500: 30,
   1024: 50,
-  2048: 70
+  2048: 90
 } as { [k: number]: number }
 
 export const CTCC = {

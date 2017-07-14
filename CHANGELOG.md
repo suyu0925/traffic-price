@@ -1,3 +1,7 @@
+## v0.0.5
+
+* modify the price of 2048M package of cucc, 70 -> 90.
+
 ## v0.0.4
 
 * modify the price of 5M package of cucc, 5 -> 6.
